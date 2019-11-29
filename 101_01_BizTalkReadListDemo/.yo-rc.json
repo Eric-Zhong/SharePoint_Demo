@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "onprem19",
+    "version": "1.9.1",
+    "libraryName": "biz-talk-read-list-demo",
+    "libraryId": "44a153a5-d5cb-4467-8467-a7c858b602e6",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

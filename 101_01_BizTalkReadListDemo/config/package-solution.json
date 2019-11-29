@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "biz-talk-read-list-demo-client-side-solution",
+    "id": "44a153a5-d5cb-4467-8467-a7c858b602e6",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/biz-talk-read-list-demo.sppkg"
+  }
+}
