@@ -2,6 +2,17 @@
 
 This is where you include your WebPart documentation.
 
+
+### Create SPFx solution
+
+```bash
+yo @microsoft/sharepoint
+gulp serve
+gulp build
+gulp bundle --ship
+gulp package-solution --ship
+```
+
 ### Building the code
 
 ```bash
@@ -24,3 +35,4 @@ gulp test - TODO
 gulp serve - TODO
 gulp bundle - TODO
 gulp package-solution - TODO
+
