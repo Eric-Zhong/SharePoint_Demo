@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "onprem19",
+    "version": "1.9.1",
+    "libraryName": "biz-talk-image-gallery",
+    "libraryId": "f670c9d7-8162-4999-9687-3157e4de27e1",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}
