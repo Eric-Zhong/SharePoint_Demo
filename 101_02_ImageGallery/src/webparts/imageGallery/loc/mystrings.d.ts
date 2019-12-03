@@ -1,7 +1,11 @@
 declare interface IImageGalleryWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
-  DescriptionFieldLabel: string;
+  ImageLibraryFieldLabel: string;
+  ImageLibrarySizeLabel: string;
+  MissingListConfiguration: string;
+  ConfigureWebpartButtonText: string;
+  ConfigureWebPartTitle: string;
 }
 
 declare module 'ImageGalleryWebPartStrings' {

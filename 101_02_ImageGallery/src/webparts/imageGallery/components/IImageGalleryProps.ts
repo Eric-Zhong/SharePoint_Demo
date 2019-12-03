@@ -1,3 +1,6 @@
 export interface IImageGalleryProps {
-  description: string;
+  listName: string;
+  context: any;
+  siteUrl:string;
+  pageSize:number;
 }
