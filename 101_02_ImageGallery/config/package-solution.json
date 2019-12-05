@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "biz-talk-image-gallery-client-side-solution",
+    "name": "BizTalkImageGallery",
     "id": "f670c9d7-8162-4999-9687-3157e4de27e1",
-    "version": "1.0.0.0",
+    "version": "1.0.0.2",
     "includeClientSideAssets": true
   },
   "paths": {
-    "zippedPackage": "solution/biz-talk-image-gallery.sppkg"
+    "zippedPackage": "solution/biztalk_image_gallery.sppkg"
   }
 }

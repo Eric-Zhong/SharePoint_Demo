@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "BizTalkFooterExtension",
+    "id": "e0a8c805-2a1a-4637-a693-d4ce5c360b12",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "features": [
+      {
+        "title": "BizTalkFooterExtension",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "02a06280-f349-4041-9890-88433e6eb922",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/biztalk_footer_extension.sppkg"
+  }
+}

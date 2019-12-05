@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "http://ericsvr/sites/develop/SitePages/DevHome.aspx",
+      "customActions": {
+        "e9d70f53-fc18-4007-ab98-9251bfd47f01": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "这是一个测试"
+          }
+        }
+      }
+    },
+    "bizTalkFooter": {
+      "pageUrl": "http://ericsvr/sites/develop/SitePages/DevHome.aspx",
+      "customActions": {
+        "e9d70f53-fc18-4007-ab98-9251bfd47f01": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "这是一个测试"
+          }
+        }
+      }
+    }
+  }
+}

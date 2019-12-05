@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="BizTalkFooter"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="e9d70f53-fc18-4007-ab98-9251bfd47f01"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>
