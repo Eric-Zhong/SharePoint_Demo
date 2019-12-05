@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "dd18267d-ed79-4b01-8375-36a796a733cf",
+  "alias": "Official-Document-List",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "公文列表" },
+    "description": { "default": "Display official document item as list item" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "公文列表"
+    }
+  }]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Official Doducment",
+    "id": "06816a4f-2a51-453f-acd4-0da02d80e673",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/BizTalkOfficialDocumentSolution.sppkg"
+  }
+}
