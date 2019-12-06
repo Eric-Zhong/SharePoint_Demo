@@ -1,5 +1,41 @@
 @import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
 
+:global{
+  div[id="SuiteNavPlaceHolder"]{
+    display: none;
+  }
+  div[class^="searchBox_"]{
+    display: none;
+  }
+  div[role="presentation"]{
+    display: none;
+  }
+  div[role="banner"]{
+    display: none;
+  }
+  div[class^="pageTitle_"]{
+    display: none;
+  }
+  div[class^="pageContainer_"]{
+    left: 0px;
+  }
+
+  div[data-automationid="SiteHeader"]{
+    display: none;
+  }
+  div[class^='pageTitle_']{
+    display: none;
+  }
+
+  .CanvasZone {
+      max-width: 100%;
+      padding: 0;
+  }
+  .CanvasZone:not(.CanvasZone--fullWidth) .ControlZone {
+    padding: 0;
+  }
+}
+
 .officialDocumentDetail {
   .container {
     max-width: 700px;
@@ -16,15 +52,20 @@
 
   .column {
     @include ms-Grid-col;
-    @include ms-lg10;
-    @include ms-xl8;
-    @include ms-xlPush2;
-    @include ms-lgPush1;
+    @include ms-lg12;
+    @include ms-xl12;
+    @include ms-xlPush12;
+    @include ms-lgPush12;
   }
 
   .title {
     @include ms-font-xl;
     @include ms-fontColor-white;
+  }
+
+  .subject {
+    @include ms-font-l;
+    color: red;
   }
 
   .subTitle {

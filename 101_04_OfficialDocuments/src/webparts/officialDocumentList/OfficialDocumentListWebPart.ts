@@ -13,10 +13,10 @@ import { IOfficialDocumentListProps } from './components/IOfficialDocumentListPr
 
 import { objectDefinedNotNull, stringIsNullOrEmpty } from '@pnp/common'
 // 0000600: 引用制作好的一个Welcome组件
-import Welcome from '../components/Welcome';
+import Welcome from './components/Welcome';
 
 // 0000900: 添加一些引用
-import { IOfficialDocumentListState } from '../../../lib/webparts/officialDocumentList/interfaces/IOfficialDocumentListState';
+import { IOfficialDocumentListState } from './interfaces/IOfficialDocumentListState';
 import { sp } from '@pnp/sp';
 
 export interface IOfficialDocumentListWebPartProps {
@@ -54,7 +54,9 @@ export default class OfficialDocumentListWebPart
     let element: React.ReactElement<any>;
     if(stringIsNullOrEmpty(this.properties.officialDocumentName)){
       // 显示欢迎页面
-      element = React.createElement(Welcome);
+      element = React.createElement(Welcome,{
+        webPartContext: this.context
+      });
     }
     else {
       // 显示文档库控件
@@ -84,15 +86,12 @@ export default class OfficialDocumentListWebPart
       pages: [
         {
           header: {
-            description: strings.PropertyPaneDescription
+            description: "公文列表组件，用于显示当前网站下所录入的公文信息。公文数据的录入，请跳转到本网站的\"网站内容\"下的\"公文\"文档库中进行公文数据的管理。"
           },
           groups: [
             {
-              groupName: strings.BasicGroupName,
+              groupName: "配置",
               groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
-                }),
                 PropertyPaneTextField('officialDocumentName', {
                   label: "公文文档库名称（默认值：OfficialDocuments)",
                   value: this._documentLibraryName

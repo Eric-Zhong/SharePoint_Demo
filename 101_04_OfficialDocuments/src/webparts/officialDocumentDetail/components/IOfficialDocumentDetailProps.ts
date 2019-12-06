@@ -1,3 +1,8 @@
+import { IWebPartContext } from "@microsoft/sp-webpart-base";
+
 export interface IOfficialDocumentDetailProps {
-  description: string;
+  context: IWebPartContext;
+  siteUri: string;
+  libraryTitle: string;
+  id: string;
 }

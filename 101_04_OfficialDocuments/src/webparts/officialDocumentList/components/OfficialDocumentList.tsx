@@ -1,9 +1,8 @@
 import * as React from 'react';
 import { IOfficialDocumentListProps } from './IOfficialDocumentListProps';
 import { IOfficialDocumentListState } from '../interfaces/IOfficialDocumentListState';
-import {OfficialDocumentService} from '../../services/OfficialDocumentService';
+import { OfficialDocumentService } from '../../services/OfficialDocumentService';
 import { IOfficialDocumentService } from '../../../../lib/webparts/services/IOfficialDocumentService';
-
 import { DetailsList, DetailsListLayoutMode, Selection, SelectionMode, IColumn } from 'office-ui-fabric-react/lib/DetailsList';
 import { Icon } from 'office-ui-fabric-react/lib/Icon';
 
@@ -37,6 +36,10 @@ export default class OfficialDocumentList
     });
   }
 
+  private onItemInvoked = (item: any) : void => {
+    console.log(item);
+  }
+
   public render(): React.ReactElement<IOfficialDocumentListProps> {
 
     const columns: IColumn[] = [{
@@ -58,7 +61,12 @@ export default class OfficialDocumentList
       maxWidth: 200,
       isResizable: true,
       data: 'string',
-      isPadded: true
+      isPadded: true,
+      onRender: (item) => {
+        return (
+          <a href={"/sites/develop/SitePages/Official-Document-Content.aspx?p_id=" + item.Id} target="_blank">{item.Subject}</a>
+        );
+      }
     },{
       key: '_Modified',
       name: 'Modified',
@@ -70,7 +78,7 @@ export default class OfficialDocumentList
       isPadded: true
     },{
       key: '_Top',
-      name: 'Is Top',
+      name: 'Is Top1',
       fieldName: 'IstOP',
       minWidth: 40,
       maxWidth: 80,
@@ -93,8 +101,9 @@ export default class OfficialDocumentList
             columns={columns}
             selectionMode={SelectionMode.none}
             setKey="none"
-            layoutMode={DetailsListLayoutMode.justified}
+            layoutMode={DetailsListLayoutMode.fixedColumns}
             isHeaderVisible={true}
+            onItemInvoked={this.onItemInvoked}
         ></DetailsList>
       </div>
     );
