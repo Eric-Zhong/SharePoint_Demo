@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "webpart-event-demo-client-side-solution",
+    "id": "182f562b-9334-49f2-af95-ee756f16517c",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/WebPartEventDemo.sppkg"
+  }
+}

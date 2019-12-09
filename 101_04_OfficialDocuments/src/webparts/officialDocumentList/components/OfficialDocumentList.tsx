@@ -2,7 +2,7 @@ import * as React from 'react';
 import { IOfficialDocumentListProps } from './IOfficialDocumentListProps';
 import { IOfficialDocumentListState } from '../interfaces/IOfficialDocumentListState';
 import { OfficialDocumentService } from '../../services/OfficialDocumentService';
-import { IOfficialDocumentService } from '../../../../lib/webparts/services/IOfficialDocumentService';
+import { IOfficialDocumentService } from '../../services/IOfficialDocumentService';
 import { DetailsList, DetailsListLayoutMode, Selection, SelectionMode, IColumn } from 'office-ui-fabric-react/lib/DetailsList';
 import { Icon } from 'office-ui-fabric-react/lib/Icon';
 
