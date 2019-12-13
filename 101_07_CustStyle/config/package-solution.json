@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "StyleCustomerizedTools",
+    "id": "1e44111a-dc3f-42f2-9c0b-0d4859f94829",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/customerized-style.sppkg"
+  }
+}

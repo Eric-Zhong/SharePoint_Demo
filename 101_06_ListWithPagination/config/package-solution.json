@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "list-with-pagination-client-side-solution",
+    "id": "3887c0d7-8e1f-4af4-aef7-25bea9545717",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/list-with-pagination.sppkg"
+  }
+}
