@@ -1,0 +1,12 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "onprem19",
+    "version": "1.9.1",
+    "libraryName": "cust-style-extension",
+    "libraryId": "0fa0bbad-8e5a-41ce-8006-a7e2e83820cc",
+    "packageManager": "npm",
+    "componentType": "extension",
+    "extensionType": "ApplicationCustomizer"
+  }
+}

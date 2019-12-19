@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "cust-style-extension-client-side-solution",
+    "id": "0fa0bbad-8e5a-41ce-8006-a7e2e83820cc",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action.",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "64e8e5f8-4fee-4b24-978f-74e882d7a917",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/cust-style-extension.sppkg"
+  }
+}
