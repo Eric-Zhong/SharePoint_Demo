@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "onprem19",
+    "version": "1.9.1",
+    "libraryName": "rich-editor-solution",
+    "libraryId": "3c78007d-16f3-4f6b-984b-09d7021c18ad",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}
