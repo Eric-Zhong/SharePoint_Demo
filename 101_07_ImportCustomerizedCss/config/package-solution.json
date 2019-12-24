@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "customerized-css-client-side-solution",
+    "id": "79bbed92-d8bb-4609-bf00-ee9a043e4291",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/customerized-css.sppkg"
+  }
+}

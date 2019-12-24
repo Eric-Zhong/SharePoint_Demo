@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "import-customerized-css-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/importCustomerizedCssWebPart/ImportCustomerizedCssWebPartWebPart.js",
+          "manifest": "./src/webparts/importCustomerizedCssWebPart/ImportCustomerizedCssWebPartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ImportCustomerizedCssWebPartWebPartStrings": "lib/webparts/importCustomerizedCssWebPart/loc/{locale}.js"
+  }
+}
