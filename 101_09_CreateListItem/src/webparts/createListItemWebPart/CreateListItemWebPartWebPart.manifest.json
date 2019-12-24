@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "105ee79d-6d52-486b-aaab-130e479c8b31",
+  "alias": "CreateListItemWebPartWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "CreateListItemWebPart" },
+    "description": { "default": "CreateListItemWebPart description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "CreateListItemWebPart"
+    }
+  }]
+}

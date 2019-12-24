@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "create-list-item-solution-client-side-solution",
+    "id": "8c86b7e2-9728-4e5d-a110-0fc129b5ed10",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/create-list-item-solution.sppkg"
+  }
+}
