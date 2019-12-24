@@ -35,6 +35,10 @@ export default class CustomerizedEevntDemo extends React.Component<ICustomerized
     this.createChildrenComponent = this.createChildrenComponent.bind(this);
   }
 
+  public componentDidMount(): void {
+    
+  }
+
   public componentDidUpdate(prevProps: ICustomerizedEevntDemoProps, prevState: ICustomerizedEevntDemoState): void {
     console.log('CustomerizedEevntDemo.componentDidUpdate()');
     console.log(this.props);
@@ -46,11 +50,11 @@ export default class CustomerizedEevntDemo extends React.Component<ICustomerized
     );
   }
 
+
   // 00200：定义 render() 方法输出 Element；这里同时声明了要 render 出来的 component 的特性。
   public render(): React.ReactElement<ICustomerizedEevntDemoProps> {
 
     console.log('CustomerizedEevntDemo.render()');
-    console.log(this.state);
 
     return (
       <div className={styles.customerizedEevntDemo} >
@@ -61,6 +65,7 @@ export default class CustomerizedEevntDemo extends React.Component<ICustomerized
             <DefaultButton onClick={this.clickMe}>点我</DefaultButton>
           </div>
           <div className={styles.row}>当前“CustomerizedEevntDemo.props.description”：{this.props.description}</div>
+          <div className={styles.row}>当前“CustomerizedEevntDemo.props.item”：{this.props.item}</div>
           <div className={styles.row}>当前“CustomerizedEevntDemo.state.myName”：{this.state.myName}</div>
           <div className={styles.row}>
             {this.createChildrenComponent()}

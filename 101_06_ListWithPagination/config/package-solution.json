@@ -2,7 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "list-with-pagination-client-side-solution",
+<<<<<<< HEAD
+    "id": "3887c0d7-8e1f-4af4-aef7-25bea9545717",
+=======
     "id": "c60185f9-9ad0-4601-bb02-51721bc42579",
+>>>>>>> 07c670f76894aaaa0a4fa16574995e0bbfa73eb0
     "version": "1.0.0.0",
     "includeClientSideAssets": true
   },

@@ -2,6 +2,13 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
+<<<<<<< HEAD
+    "list-with-pagination-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/listWithPagination/ListWithPaginationWebPart.js",
+          "manifest": "./src/webparts/listWithPagination/ListWithPaginationWebPart.manifest.json"
+=======
     "list-with-pagination-web-part-web-part": {
       "components": [
         {
@@ -15,13 +22,18 @@
         {
           "entrypoint": "./lib/webparts/listWithPagination2/ListWithPagination2WebPart.js",
           "manifest": "./src/webparts/listWithPagination2/ListWithPagination2WebPart.manifest.json"
+>>>>>>> 07c670f76894aaaa0a4fa16574995e0bbfa73eb0
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
+<<<<<<< HEAD
+    "ListWithPaginationWebPartStrings": "lib/webparts/listWithPagination/loc/{locale}.js"
+=======
     "ListWithPaginationWebPartWebPartStrings": "lib/webparts/listWithPaginationWebPart/loc/{locale}.js",
     "ListWithPagination2WebPartStrings": "lib/webparts/listWithPagination2/loc/{locale}.js"
+>>>>>>> 07c670f76894aaaa0a4fa16574995e0bbfa73eb0
   }
 }

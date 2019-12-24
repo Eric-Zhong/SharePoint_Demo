@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "rich-editor-solution-client-side-solution",
+    "id": "3c78007d-16f3-4f6b-984b-09d7021c18ad",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/rich-editor-solution.sppkg"
+  }
+}

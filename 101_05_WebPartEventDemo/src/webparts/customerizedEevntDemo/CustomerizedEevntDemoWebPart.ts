@@ -4,7 +4,9 @@ import { Version } from '@microsoft/sp-core-library';
 import {
   BaseClientSideWebPart,
   IPropertyPaneConfiguration,
-  PropertyPaneTextField
+  PropertyPaneTextField,
+  IPropertyPaneDropdownOption,
+  PropertyPaneDropdown,
 } from '@microsoft/sp-webpart-base';
 
 import * as strings from 'CustomerizedEevntDemoWebPartStrings';
@@ -13,15 +15,20 @@ import { ICustomerizedEevntDemoProps } from './components/ICustomerizedEevntDemo
 
 export interface ICustomerizedEevntDemoWebPartProps {
   description: string;
+  listItem: string;
 }
 
 export default class CustomerizedEevntDemoWebPart extends BaseClientSideWebPart<ICustomerizedEevntDemoWebPartProps> {
+
+  private _dropdownOption: IPropertyPaneDropdownOption[] = [];
+
 
   public render(): void {
     const element: React.ReactElement<ICustomerizedEevntDemoProps > = React.createElement(
       CustomerizedEevntDemo,
       {
-        description: this.properties.description
+        description: this.properties.description,
+        item: this.properties.listItem
       }
     );
 
@@ -41,6 +48,17 @@ export default class CustomerizedEevntDemoWebPart extends BaseClientSideWebPart<
   }
 
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
+
+
+    this._dropdownOption = [
+      { key: 'ID', text: 'A' },
+      { key: 'Title', text: 'B' },
+      { key: 'Created', text: 'C' },
+      { key: 'Modified', text: 'D' },
+      { key: 'ImageWidth', text: 'E' },
+      { key: 'ImageHeight', text: 'F' }
+    ]
+
     return {
       pages: [
         {
@@ -53,6 +71,10 @@ export default class CustomerizedEevntDemoWebPart extends BaseClientSideWebPart<
               groupFields: [
                 PropertyPaneTextField('description', {
                   label: strings.DescriptionFieldLabel
+                }),
+                PropertyPaneDropdown('listItem',{
+                  label: "List",
+                  options: this._dropdownOption
                 })
               ]
             }
