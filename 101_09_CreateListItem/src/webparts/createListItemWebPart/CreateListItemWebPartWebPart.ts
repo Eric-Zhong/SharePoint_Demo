@@ -22,9 +22,9 @@ export default class CreateListItemWebPartWebPart extends BaseClientSideWebPart<
 
   protected async onInit(): Promise<void> {
     const _ = await super.onInit();
-    sp.setup({
-      spfxContext: this.context.spHttpClient
-    })
+    // sp.setup({
+    //   spfxContext: this.context.spHttpClient
+    // })
   }
 
 
